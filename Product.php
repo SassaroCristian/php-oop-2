@@ -1,6 +1,8 @@
 <?php
 
-class product
+namespace MyApp;
+
+class Product
 {
     private $productName;
     private $productDescription;
@@ -16,4 +18,11 @@ class product
         $this->productCategory = $productCategory;
         $this->productImage = $productImage;
     }
+
+    // Implemento il metodo magico __toString per convertire l'oggetto in una stringa
+    public function __toString()
+    {
+        return "Nome: " . $this->productName . " | Descrizione: " . $this->productDescription . " | Prezzo: " . $this->productPrice . " | Categoria: " . $this->productCategory . " | Immagine: " . $this->productImage;
+    }
 }
+?>

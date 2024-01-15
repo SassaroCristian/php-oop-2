@@ -11,10 +11,5 @@ class Category
         $this->products = [];
     }
 
-    public function addProduct(Product $product)
-    {
-
-    }
-
 
 }

@@ -1,4 +1,5 @@
 <?php
+
 class ShoppingCart
 {
 
@@ -11,12 +12,6 @@ class ShoppingCart
         $this->product = $product;
         $this->quantity = $quantity;
     }
-
-    public function removeItem(Product $product)
-    {
-
-    }
-
 
 }
 
