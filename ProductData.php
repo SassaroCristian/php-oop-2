@@ -84,18 +84,3 @@ $products = [
         $userRegistered
     )
 ];
-
-// Stampo i prodotti
-echo "<div>";
-echo "<br><h2>Prodotti</h2>";
-foreach ($products as $product) {
-    echo "<div class='card'>";
-    echo "<img src='{$product->getProductImage()}' alt='{$product->getProductName()}'>";
-    echo "<h4>{$product->getProductName()}</h4>";
-    echo "<p>{$product->getProductDescription()}</p>";
-    echo "<p>Prezzo: $ {$product->getProductPrice()}</p>";
-    echo "<p>Categoria: {$product->getProductCategory()}</p>";
-    echo "</div>";
-}
-echo "</div>";
-?>

@@ -4,7 +4,7 @@ namespace MyApp;
 
 class User
 {
-    private $userType; // Proprietà per il tipo di utente
+    private $userType;
 
     public function __construct($userType)
     {
